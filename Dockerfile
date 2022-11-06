@@ -1,4 +1,4 @@
-FROM node:14 as build
+FROM node:14-alpine as build
 COPY package*.json ./
 RUN npm install && npm cache clean --force
 COPY . .

@@ -1,8 +1,22 @@
+# remove node modules as the biggest folder
 */node_modules/
-npm-debug.log
-Dockerfile*
-serverless.yml
+
+# remove Git files as they are unnecessary
 .git
 .gitignore
+
+# remove optional and unnecessary files
+npm-debug.log
+Dockerfile*
 README.md
+
+# Serverless configuration
+serverless.yml
+
+# IDE - VSCode 
 .vscode
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
